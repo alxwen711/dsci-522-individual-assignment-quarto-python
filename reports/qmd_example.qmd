@@ -10,6 +10,10 @@ format:
         toc: true
         toc-depth: 2
 bibliography: references.bib
+output-file: index.html
+execute:
+    echo: false
+    warning: false
 ---
 
 ```{python}
@@ -39,7 +43,7 @@ as well as Quarto [@Allaire_Quarto_2022].
 
 # Results
 
-![Horse populations for all provinces in Canada from 1906 - 1972.](../results/horse_pops_plot.png){#fig-horse_pop width=50%}
+![Horse populations for all provinces in Canada from 1906 - 1972.](../results/horse_pops_plot.png){#fig-horse_pop width=67%}
 
 
 We can see from @fig-horse_pop that Ontario, Saskatchewan and Alberta 
@@ -71,10 +75,9 @@ $$s = \sqrt{\frac{\sum_{i=1}^N (x_i - \overline{x})^2}{N-1} }$$
 
 Additionally, note that in @tbl-horse-sd we consider the sample standard deviation of the number of horses during the same time span as Figure 1.
 
-![](../results/horse_pops_plot_largest_sd.png)
+![Horse populations for the province with the largest standard deviation](../results/horse_pops_plot_largest_sd.png){#fig-horse_dev width=67%}
 
-Figure 2: Horse populations for the province with the largest standard deviation
 
-In Figure 2 we zoom in and look at the province of `{python} largest_sd`, which had the largest spread of values in terms of standard deviation.
+In @fig-horse_dev we zoom in and look at the province of `{python} largest_sd`, which had the largest spread of values in terms of standard deviation.
 
 # References
